@@ -8,6 +8,15 @@ function playGame(){
         playRound(humanSelection, computerSelection);
     }
     console.log(`Human Score:- ${humanScore} Computer Score:- ${computerScore}`);
+    if(humanScore > computerScore){
+        console.log("Human Wins!");
+    }
+    else if(humanScore == computerScore){
+        console.log("Its a draw!");
+    }
+    else{
+        console.log("Computer Wins!");
+    }
     function playRound(humanChoice, computerChoice) {
         if(humanChoice == computerChoice){
             console.log("Draw!");
